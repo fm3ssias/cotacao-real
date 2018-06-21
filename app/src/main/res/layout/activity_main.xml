@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDolar"
+        android:layout_width="124dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="61dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/btn_Dolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBitcoin"
+        android:layout_width="124dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="54dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/btn_Bitcoin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEuro" />
+
+    <Button
+        android:id="@+id/btnPeso"
+        android:layout_width="124dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="54dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/btn_Peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDolar" />
+
+    <Button
+        android:id="@+id/btnEuro"
+        android:layout_width="124dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="61dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/btn_Euro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="203dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginStart="2dp"
+        android:text="@string/titulo_valorCotacao"
+        android:textAlignment="viewStart"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtMoeda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCifrao" />
+
+    <TextView
+        android:id="@+id/txtMoeda"
+        android:layout_width="202dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginStart="91dp"
+        android:text="@string/titulo_moeda"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCifrao"
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="45dp"
+        android:text="@string/titulo_cifrao"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtMoeda"
+        app:layout_constraintEnd_toStartOf="@+id/txtValor"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

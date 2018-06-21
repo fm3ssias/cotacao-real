@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cotação Real</string>
+    <string name="btn_Euro">Euro</string>
+    <string name="btn_Dolar">Dólar</string>
+    <string name="btn_Bitcoin">Bitcoin</string>
+    <string name="btn_Peso">Peso</string>
+
+    <string name="titulo_cifrao">R$</string>
+    <string name="titulo_valorCotacao">0.0</string>
+    <string name="titulo_moeda">Cotacao Alvo</string>
+</resources>
